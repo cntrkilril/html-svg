@@ -1,0 +1,233 @@
+html{
+    font-size: 62.5%;
+}
+
+body
+{
+    margin:0;
+    padding: 0;
+    min-width: 320px;
+    font-size: 1rem;
+}
+
+.header
+{
+    background-color: rgb(111, 172, 102) ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &__h1
+    {
+        margin: 0;
+        font-size: 2rem;
+        background-color:white;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 0.4rem;
+    }
+    &__h2
+    {
+        margin: 0;
+        font-size: 2rem;
+        background-color:white;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 0.4rem;
+    }
+    &__menu-burger
+    {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+        transition: .1s;
+    }
+}
+
+.menu-burger
+{
+    fill: white;
+    &:hover
+    {
+        fill: black;
+    }
+    g
+    {
+        path
+        {
+            transition: all .5s ease-in-out;
+        }
+    }
+}
+
+// menu-burger transform
+
+.opacity
+{
+    opacity: 0;
+}
+
+.rotate-one
+{
+    transition: all .5s ease-in-out;
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+
+.rotate-two
+{
+    transition: all .5s ease-in-out;
+    transform: rotate(-45deg);
+    transform-origin: center center;
+}
+
+// /////////////////////////////////////////////////////////////////////
+
+.search,.home
+{
+    width: 4rem;
+    height: 4rem;
+    fill: white;
+    transition: .8s;
+    cursor: pointer;
+    margin-left: 1rem;
+    &:hover
+    {
+        fill: black;
+    }
+}
+
+// ///////////////////////////////////////////////////////
+
+.block
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 40%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    &__svg
+    {
+        width: 100%;
+    }
+}
+
+.lamp
+{
+    background-color: white;
+    color: gray;
+    fill: #c9c9c9;
+    stroke: black;
+}
+
+.body-lamp
+{
+    stroke: black;
+}
+
+.cbl
+{
+    fill: rgba(255, 255, 255, 0);
+    stroke: black;
+}
+
+.btn
+{
+    fill: rgb(160, 70, 70);
+    stroke: black;
+    cursor: pointer;
+}
+
+.yellow
+{
+    fill: #d1e958;
+}
+
+.lamp-luk
+{
+    opacity: 0;
+    stroke-linecap:round;
+    stroke: #b9cc57; 
+}
+
+.yellow-luk
+{
+    opacity: 1;
+}
+
+// /////////////////////////////////////////////////////////////
+
+.body-clock
+{
+    fill: white;
+    stroke: black;
+}
+
+.cntr-clock
+{
+    fill: rgb(0, 0, 0);
+    stroke: black;
+}
+
+.arrow-min, .arrow-hour
+{
+    transform-origin: center center;
+    stroke: black;
+    stroke-linecap:round;
+    transform: rotate(0deg);
+}
+
+.arrow-hour
+{
+    transform: rotate(0deg);
+}
+
+// ////////////////////////////////////////////////////
+
+.modal
+{
+    width: 16rem;
+    height: 16rem;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.modal:hover
+{
+    fill: rgb(35, 66, 204);
+}
+
+
+// /////////////////////////////
+
+.block-sea
+{
+    display: flex;
+    flex-direction: column;
+    &__h2
+    {
+        font-size: 3rem;
+    }
+}
+
+.sea
+{
+    background-color: rgb(128, 128, 202);
+    width: 100%;
+    height: 70px;
+}
+
+#line
+{
+    stroke: rgb(34, 34, 123);
+    fill: rgba(255, 0, 0, 0);
+    stroke-linecap:round;
+    stroke-width: 5px;
+}
